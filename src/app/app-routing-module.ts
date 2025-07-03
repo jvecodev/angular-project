@@ -1,3 +1,5 @@
+// Neste arquivo, definimos as rotas da aplicação Angular, a paginação e outros recursos de navegação.
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
