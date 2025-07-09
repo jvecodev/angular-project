@@ -1,59 +1,84 @@
-# AngularProject
+# 📚 Ambiente de Estudos Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+Este é um projeto de estudos desenvolvido com **Angular v20** para aprender e praticar os conceitos fundamentais do framework.
 
-## Development server
+## 🎯 Objetivo
 
-To start a local development server, run:
+Projeto criado para explorar e estudar:
+- Estrutura de componentes Angular
+- Arquitetura modular
+- Roteamento
+- Data binding
+- Diretivas
+- Serviços e injeção de dependências
 
+## 🛠️ Tecnologias Utilizadas
+
+- **Angular**: 20.0.0
+- **TypeScript**: 5.8.2
+- **Bootstrap**: 5.3.7
+- **RxJS**: 7.8.0
+- **Node.js** (requerido para desenvolvimento)
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- Angular CLI instalado globalmente: `npm install -g @angular/cli`
+
+### Instalação
 ```bash
+# Instalar dependências
+npm install
+```
+
+### Desenvolvimento
+```bash
+# Iniciar servidor de desenvolvimento
+npm start
+# ou
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse: `http://localhost:4200/`
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Build
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+# Build para produção
+npm run build
+# ou
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+### Testes
 ```bash
+# Executar testes unitários
+npm test
+# ou
 ng test
 ```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
+### Comandos Úteis para Estudo
 ```bash
-ng e2e
+# Gerar novo componente
+ng generate component nome-do-componente
+
+# Gerar novo serviço
+ng generate service nome-do-servico
+
+# Gerar novo módulo
+ng generate module nome-do-modulo
+
+# Ver ajuda de comandos
+ng generate --help
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📝 Observações de Desenvolvimento
 
-## Additional Resources
+- Projeto configurado com **standalone: false** para estudar a arquitetura tradicional com módulos
+- Bootstrap incluído para acelerar o desenvolvimento de UI
+- Estrutura organizada em `components/` e `pages/` para melhor organização
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+💡 **Dica**: Use este projeto como sandbox (ambiente fechado e seguro) para experimentar novos conceitos Angular conforme for estudando!

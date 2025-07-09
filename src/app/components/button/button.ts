@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+// utilizando a estrutura Standalone  = false
+
 @Component({
   selector: 'app-button',
   standalone: false,
