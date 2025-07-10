@@ -1,3 +1,4 @@
+import { HtmlParser } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'angular-project';
+
 }
