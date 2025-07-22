@@ -7,10 +7,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Home } from './pages/home/home';
+import { Users } from './pages/users/list/users';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import { BaseUI } from './components/base-ui/base-ui';
-import { Users } from './components/users/users';
 
 @NgModule({
   declarations: [
