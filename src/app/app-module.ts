@@ -11,6 +11,8 @@ import { Users } from './pages/users/list/users';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import { BaseUI } from './components/base-ui/base-ui';
+import { User } from './pages/users/view/user';
+import { UserCard } from './components/user-card/user-card';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { BaseUI } from './components/base-ui/base-ui';
     Footer,
     BaseUI,
     Users,
+    User,
+    UserCard,
   ],
   imports: [
     BrowserModule,
