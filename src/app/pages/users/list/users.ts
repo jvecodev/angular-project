@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../../../models/user';
 
 @Component({
   selector: 'app-users',
@@ -8,11 +9,20 @@ import { Component } from '@angular/core';
 })
 export class Users {
 
-  users: string[] = [
-    'John Doe',
-    'Jane Smith',
-    'Alice Johnson',
-    'Bob Brown',
-    ];
+  users: User[] = [
 
+    {
+      username: 'João',
+      age: 23
+    },
+    {
+      username: 'Maria',
+      age: 30
+    },
+    {
+      username: 'Pedro',
+      age: 28
+    }
+
+  ]
 }
