@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HelloWorldComponent } from './helloworld/helloworld.component';
+import { CalculadoraComponent } from "./calculadora/calculadora.component";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HelloWorldComponent, CalculadoraComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'angular-project';
+  protected title = 'Hello world!';
 }

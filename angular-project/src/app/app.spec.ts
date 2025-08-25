@@ -1,3 +1,5 @@
+// Teste da aplicação Angular
+
 import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
