@@ -15,6 +15,8 @@ export class CalculadoraComponent {
   resultado: number = 0;
 
   calcularResultado(){
+
+    // mesma coisa que estivesse declarando uma variavel local, por exemplo com let 
     this.resultado = this.numero1 + this.numero2;
   }
 }

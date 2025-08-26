@@ -1,13 +1,19 @@
 <div class="container">
     <div class="form-box">
+        <!-- variavel frm do tipo ngForm -->
+         <!-- o ideal é utilizar desta maneira, e não no button com onclick -->
         <form #frm="ngForm" (ngSubmit)="calcularResultado()" >
             <h2>Calculadora</h2>
             <label for="numero1">Número 1</label>
+              <!-- diretiva ngModel -> two way data binding,  -->
+              <!-- é uma conexão entre o valor do input e a propriedade do componente -->
             <input type="number" name="numero1" id="numero1" [(ngModel)]="numero1" />
 
             <label for="numero2">Número 2</label>
+            <!-- diretiva ngModel -> two way data binding,  -->
             <input type="number" name="numero2" id="numero2" [(ngModel)]="numero2" />
 
+            <!-- para combinar com o ngSubmit do form -->
             <button type="submit">Somar</button>
         </form>
 
@@ -15,13 +21,15 @@
             <p>Seu resultado está abaixo:</p>
         </div>
 
+        <!-- para usar o if no html, precisamos da lib CommonModule -->
         @if(resultado){
             <div class="result-display">
+              <!-- assim ele ja referencia o resultado -->
                 <p>Resultado: <span id="result"> {{ resultado }} </span></p>
-            </div>            
+            </div>
         } @else {
             <div class="result-display">
-                <p>Seu resultado aparecerá aqui.</p>
+                <p>Digite seus números.</p>
             </div>
         }
 
