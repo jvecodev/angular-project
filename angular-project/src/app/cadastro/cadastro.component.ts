@@ -29,7 +29,8 @@ import { CommonModule } from '@angular/common';
     MatSelectModule,
     CommonModule,
     NgxMaskDirective,
-  ], providers: [
+  ], 
+  providers: [
     provideNgxMask()
   ],
   templateUrl: './cadastro.component.html',
@@ -66,15 +67,14 @@ export class CadastroComponent implements OnInit {
           }
         }
     })
-
+    
     this.carregarUFs();
   }
 
   carregarUFs(){
-    // observable  subscriber
     this.brasilApiService.listarUFs().subscribe({
       next: listaEstados => this.estados = listaEstados,
-      error: erro => console.log("ocorreu um erro: ", erro)
+      error: erro => console.log("Erro ao carregar estados: ", erro)
     })
   }
 
@@ -82,7 +82,7 @@ export class CadastroComponent implements OnInit {
     const ufSelecionada = event.value;
     this.brasilApiService.listarMunicipios(ufSelecionada).subscribe({
       next: listaMunicipios => this.municipios = listaMunicipios,
-      error: erro => console.log('ocorreu um erro: ', erro)
+      error: erro => console.log('Erro ao carregar municípios: ', erro)
     })
   }
 

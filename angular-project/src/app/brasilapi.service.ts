@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Estado, Municipio } from '../../../curso-angular/crud-angular-material/src/app/brasilapi.models';
+import { Estado, Municipio } from './brasilapi.models';
 
 @Injectable({
   providedIn: 'root'
