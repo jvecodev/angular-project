@@ -7,7 +7,7 @@ import { ListaTesteComponent } from './lista-test/lista-test.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HelloWorldComponent, CalculadoraComponent, ListaTesteComponent],
+  imports: [RouterOutlet, HelloWorldComponent, CalculadoraComponent, ListaTesteComponent, ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
