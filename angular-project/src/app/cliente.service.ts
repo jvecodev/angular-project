@@ -1,4 +1,7 @@
-import { Injectable } from '@angular/core';
+// criado com ng g service cliente
+// implementa a lógica de acesso a dados dos clientes, todas as regras de negócio
+
+import { Injectable } from '@angular/core'; // Injectable, é um decorator
 import { Cliente } from './cadastro/cliente';
 
 @Injectable({
@@ -57,7 +60,7 @@ export class ClienteService {
       const clientes: Cliente[] = JSON.parse(repositorioClientes);
       return clientes;
     }
-    
+
     const clientes: Cliente[] = [];
     localStorage.setItem(ClienteService.REPO_CLIENTES, JSON.stringify(clientes));
     return clientes;

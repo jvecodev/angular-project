@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatCardModule } from '@angular/material/card'
 import { MatFormFieldModule } from '@angular/material/form-field'
+// matinput eu provo que o inpunt é do angular mateterial
 import { MatInputModule } from '@angular/material/input'
 import { FormsModule } from '@angular/forms'
 import { MatIconModule } from '@angular/material/icon'
@@ -11,10 +12,13 @@ import { MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { Cliente } from './cliente'
 import { ClienteService } from '../cliente.service';
 import { ActivatedRoute, Router } from '@angular/router';
+// Para aplicar mascaras nos inputs
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask'
 import { BrasilapiService } from '../brasilapi.service';
 import { Estado, Municipio } from '../brasilapi.models';
 import { CommonModule } from '@angular/common';
+
+// para utilizar no html, preciso importar o CommonModule
 
 @Component({
   selector: 'app-cadastro',
@@ -29,7 +33,7 @@ import { CommonModule } from '@angular/common';
     MatSelectModule,
     CommonModule,
     NgxMaskDirective,
-  ], 
+  ],
   providers: [
     provideNgxMask()
   ],
@@ -43,6 +47,8 @@ export class CadastroComponent implements OnInit {
   snack: MatSnackBar = inject(MatSnackBar);
   estados: Estado[] = [];
   municipios: Municipio[] = [];
+
+  // service serve para contar a camada logica da aplicação
 
   constructor(
     private service: ClienteService,
@@ -67,7 +73,7 @@ export class CadastroComponent implements OnInit {
           }
         }
     })
-    
+
     this.carregarUFs();
   }
 

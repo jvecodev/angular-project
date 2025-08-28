@@ -1,3 +1,4 @@
+// uui significa identificador único universal
 import { v4 as uuid } from 'uuid'
 
 export class Cliente {

@@ -1,3 +1,4 @@
+<!-- FlexLayoutModule foi importado no ts -->
 <div fxLayout="row" fxLayoutAlign="center">
     <div fxLayout="column" fxFlex="900px">
         <form class="mt-60" #clientesFrm="ngForm" (ngSubmit)="salvar()">
@@ -10,7 +11,7 @@
                         <div fxLayout="column" fxFlex="800px">
                             <mat-form-field class="full-width">
                                 <mat-label>Nome: *</mat-label>
-                                <input type="text" 
+                                <input type="text"
                                        [(ngModel)]="cliente.nome"
                                        name="nome"
                                        placeholder="Ex: José da Silva" matInput />
@@ -22,7 +23,7 @@
                         <div fxLayout="column" fxFlex="800px">
                             <mat-form-field class="full-width">
                                 <mat-label>Email: *</mat-label>
-                                <input type="email" 
+                                <input type="email"
                                        [(ngModel)]="cliente.email"
                                        name="email"
                                        placeholder="Digite seu email" matInput />
@@ -34,7 +35,7 @@
                         <div fxLayout="column" fxFlex="400px">
                             <mat-form-field class="full-width">
                                 <mat-label>CPF: *</mat-label>
-                                <input type="text" 
+                                <input type="text"
                                        [(ngModel)]="cliente.cpf"
                                        name="cpf"
                                        mask="000.000.000-00"
@@ -47,7 +48,7 @@
                         <div fxLayout="column" fxFlex="400px">
                             <mat-form-field class="full-width">
                                 <mat-label>Data Nascimento: *</mat-label>
-                                <input type="text" 
+                                <input type="text"
                                        [(ngModel)]="cliente.dataNascimento"
                                        name="dataNascimento"
                                        mask="00/00/0000"
@@ -60,7 +61,7 @@
                         <div fxLayout="column" fxFlex="400px">
                             <mat-form-field class="full-width">
                                 <mat-label>UF: *</mat-label>
-                                <mat-select [(value)]="cliente.uf" 
+                                <mat-select [(value)]="cliente.uf"
                                             (selectionChange)="carregarMunicipios($event)">
                                     <mat-option *ngFor="let uf of estados" [value]="uf.sigla">
                                         {{ uf.sigla }}
@@ -90,7 +91,7 @@
                             <mat-icon fontIcon="save"></mat-icon>
                             Salvar
                         </button>
-                    } @else { 
+                    } @else {
                         <button mat-flat-button color="primary">
                             <mat-icon fontIcon="refresh"></mat-icon>
                             Atualizar

@@ -9,6 +9,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
+    // Possibilita acessar as routes do arquivo routes.ts
     provideRouter(routes),
     provideHttpClient(),
     provideAnimationsAsync()
